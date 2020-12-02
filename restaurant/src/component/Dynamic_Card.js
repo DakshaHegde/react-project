@@ -2,7 +2,7 @@ import React from "react";
 import "./Box.css";
 import { Card } from "react-bootstrap";
 
-const MoreDeets = () => {
+const Dynamic_Card = () => {
   const cardInfo = [
     {
       title: "Table 1",
@@ -56,4 +56,4 @@ const MoreDeets = () => {
     return <div className="grid">{cardInfo.map(renderCard)}</div>;
   };
   
-  export default MoreDeets;
+  export default Dynamic_Card;

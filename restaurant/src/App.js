@@ -6,7 +6,7 @@ import React from 'react';
 import Sidebar from './Sidebar';
 import Login from "./Login";
 import { Card } from "react-bootstrap";
-import MoreDeets from "./component/MoreDeets";
+import Dynamic_Card from "./component/Dynamic_Card";
 
 function App() {
   
@@ -22,13 +22,13 @@ function App() {
         </div>
         </div>
         <First_Page />
-        <Route path="/" component={MoreDeets}>
+        
+        <Route path="/" component={Dynamic_Card}>
         </Route>
+        
         </Route>
   
-        <Route path="/Next_Page">
-        <Next_Page /> 
-        </Route>
+      
 
         <Route exact path="/login">
         <Login />
