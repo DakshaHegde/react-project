@@ -5,30 +5,37 @@ import './App.css';
 import React from 'react';
 import Sidebar from './Sidebar';
 import Login from "./Login";
+import { Card } from "react-bootstrap";
+import MoreDeets from "./component/MoreDeets";
 
 function App() {
   
   return (
-    <Router>
+    
     <div className="App">
-     <Switch>
-       <Route path="/Next_Page">
-        <Next_Page /> 
-       </Route>
-       <Route path="/">
-       <div className="App" id="outer-container">
-      <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
-      <div id="page-wrap">
-      </div>
-    </div>
+      <Router>
+      <Switch>
+      <Route path="/">
+        <div className="App" id="outer-container">
+        <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+        <div id="page-wrap">
+        </div>
+        </div>
         <First_Page />
-       </Route>
-       <Route exact path="/login">
+        <Route path="/" component={MoreDeets}>
+        </Route>
+        </Route>
+  
+        <Route path="/Next_Page">
+        <Next_Page /> 
+        </Route>
+
+        <Route exact path="/login">
         <Login />
        </Route>
-     </Switch>
-   </div>
-  </Router>  
+       </Switch>
+      </Router>  
+    </div>
   );
 }
 
