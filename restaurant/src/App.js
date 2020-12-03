@@ -4,7 +4,6 @@ import Home_Page from "./Home_Page";
 import './App.css';
 import React from 'react';
 import Sidebar from './Sidebar';
-import Login from "./Login";
 import { Card } from "react-bootstrap";
 import Dynamic_Card from "./component/Dynamic_Card";
 
@@ -33,7 +32,7 @@ function App() {
        </Route> 
 
         <Route exact path="/login">
-        <Login />
+        <Home_Page />
        </Route>
        </Switch>
        </div>

@@ -6,11 +6,11 @@ const Dynamic_Card = () => {
   const cardInfo = [
     {
       title: "Table 1",
-      text: " ",
+      text: "dndfkd dddsd dsadasd dassd heheg heugfe",
     },
     {
       title: "Table 2",
-      text: " ",
+      text: "dfs dsd ",
     },
     {
       title: "Table 3",
