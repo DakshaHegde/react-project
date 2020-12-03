@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  background-color: white;
+  font-style: normal;
+  margin: 0;
+  z-index: -1;
+  margin-bottom: -10px;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  margin-left: 0px;
+  opacity: 90%;
+  color: #fff;
+  font-weight: 100;
+}
+
+.navicon {
+  display: flex;
+  margin-left: 340px;
+  width: 180px;
+  height: 100px;
+  border-radius: 50px 50px;
+  margin-top: -5px;
+}
+
+.usericon {
+  margin-left: 540px;
+  margin-top: 0px;
+}
+
+.user_icon {
+  width: 85px;
+  height: 85px;
+}

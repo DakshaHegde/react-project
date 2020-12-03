@@ -6,39 +6,39 @@ const Dynamic_Card = () => {
   const cardInfo = [
     {
       title: "Table 1",
-      text: "Order",
+      text: " ",
     },
     {
       title: "Table 2",
-      text: "Order",
+      text: " ",
     },
     {
       title: "Table 3",
-      text: "Order",
+      text: " ",
     },
     {
         title: "Table 4",
-        text: "Order",
+        text: " ",
       },
       {
         title: "Table 5",
-        text: "Order",
+        text: " ",
       },
       {
         title: "Table 6",
-        text: "Order",
+        text: " ",
       },
       {
         title: "Table 7",
-        text: "Order",
+        text: " ",
       },
       {
         title: "Table 8",
-        text: "Order",
+        text: " ",
       },
       {
         title: "Table 9",
-        text: "Order",
+        text: " ",
       }
     ];
   
@@ -46,7 +46,7 @@ const Dynamic_Card = () => {
       return (
         <Card className="box">
           <Card.Body>
-            <Card.Title>{card.title}</Card.Title>
+            <Card.Text>{card.title}</Card.Text>
             <Card.Text>{card.text}</Card.Text>
           </Card.Body>
         </Card>
