@@ -5,7 +5,9 @@ import './App.css';
 import React from 'react';
 import Sidebar from './Sidebar';
 import { Card } from "react-bootstrap";
-import Dynamic_Card from "./component/Dynamic_Card";
+import Cards from "./Cards";
+import firebase from 'firebase';
+import {db} from './firebase';
 
 function App() {
   
@@ -23,7 +25,7 @@ function App() {
         </div>
         <Home_Page />
         
-        <Route path="/Home_Page" component={Dynamic_Card}>
+        <Route path="/Home_Page" component={Cards}>
         </Route>
         
         </Route>
